@@ -57,10 +57,3 @@ productPrice.innerHTML = 'Rs.' + price;
 
 
 
-// const shopButton = document.getElementById('shopbutton');
-
-// shopButton.addEventListener('click', function () {
-//     window.location.href = 'shop.html';
-// });
-
-
