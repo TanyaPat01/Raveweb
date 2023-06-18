@@ -47,29 +47,29 @@
                         <td>Subtotal</td>
                     </tr>
                 </thead>
-                <tbody>
-                    <tr>
-                        <td><a href="#" class="remove-icon" data-row-id="1"><i class="far fa-times-circle"></i></a></td>
+                <tbody id="cart-items">
+                    <tr id="row-1">
+                        <td><a href="#" class="remove-icon"onclick="removeProduct('row-1')"><i class="far fa-times-circle" data-row-id="1"></i></a></td>
                         <td><img src="img/products/f1.jpg" alt=""></td>
                         <td>Floral Design Shirt</td>
                         <td>Rs. 1899</td>
-                        <td><input type="number" value="1" min = "1" id="quantity-input-1"></td>
+                        <td><input type="number" value="1" min = "1" id="quantity-input-1" onchange="updateSubtotal(1)"></td>
                         <td><span id="price-display-1">Rs. 1899</span></td>
                     </tr>
-                    <tr>
-                        <td><a href="#" class="remove-icon" data-row-id="2"><i class="far fa-times-circle"></i></a></td>
+                    <tr id="row-2">
+                        <td><a href="#" class="remove-icon" onclick="removeProduct('row-2')" ><i class="far fa-times-circle" data-row-id="2"></i></a></td>
                         <td><img src="img/products/f2.jpg" alt=""></td>
                         <td>Floral Design Shirt</td>
                         <td>Rs. 2099</td>
-                        <td><input type="number" value="1" min = "1" id="quantity-input-2"></td>
+                        <td><input type="number" value="1" min = "1" id="quantity-input-2" onchange="updateSubtotal(2)"></td>
                         <td><span id="price-display-2">Rs. 2099</span></td>
                     </tr>
-                    <tr>
-                        <td><a href="#" class="remove-icon" data-row-id="3"><i class="far fa-times-circle"></i></a></td>
+                    <tr id="row-3">
+                        <td><a href="#" class="remove-icon" onclick="removeProduct('row-3')" ><i class="far fa-times-circle" data-row-id="3"></i></a></td>
                         <td><img src="img/products/f3.jpg" alt=""></td>
                         <td>Floral Design Shirt</td>
                         <td>Rs. 1099</td>
-                        <td><input type="number" value="1" min = "1" id="quantity-input-3"></td>
+                        <td><input type="number" value="1" min = "1" id="quantity-input-3" onchange="updateSubtotal(3)"></td>
                         <td><span id="price-display-3">Rs. 1099</span></td>
                     </tr>
                 </tbody>
@@ -89,15 +89,16 @@
                 <table>
                     <tr>
                         <td>Cart Subtotal</td>
-                        <td>Rs.3350</td>
+                        <td><span id="total-price">Rs.5097</span></td>
                     </tr>
                     <tr>
                         <td>Shipping</td>
                         <td>Free</td>
-                    </tr>
+                    </tr>+
+                    
                     <tr>
                         <td><strong>Total</strong></td>
-                        <td><strong>Rs.3350</strong></td>
+                        <td><strong><span id="total-price-2">Rs.5097</span></strong></td>
                     </tr>
                 </table>
                 <button class="normal">Proceed To Checkout</button>
@@ -124,16 +125,16 @@
             </div>
             <div class="col">
                 <h4>About</h4>
-                <a href="#">About Us</a>
+                <a href="about.html">About Us</a>
                 <a href="#">Delivery Information</a>
                 <a href="#">Privacy Policy</a>
                 <a href="#">Terms & Conditions</a>
-                <a href="#">Contact Us</a>
+                <a href="contact.html">Contact Us</a>
             </div>
             <div class="col">
                 <h4>My Account</h4>
                 <a href="#">Sign In</a>
-                <a href="#">View Cart</a>
+                <a href="cart.html">View Cart</a>
                 <a href="#">My Wishlist</a>
                 <a href="#">Track My Order</a>
                 <a href="#">Help</a>
